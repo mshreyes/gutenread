@@ -6,6 +6,8 @@ your own text file.
 
 ![GutenRead showing a word in the Midnight theme](docs/screenshot.png)
 
+> GutenRead is a hobby project. It works for me, but it's unpolished and unsupported, so expect rough edges.
+
 ## Features
 
 - **Built-in library.** Search Project Gutenberg's English catalogue and start reading in one click.
@@ -52,6 +54,21 @@ your computer, and **Continue** to return to your last book.
 | Quit | `Ctrl+Q` |
 
 Themes, fonts, and the punctuation and focus-letter options are also in the **View** menu.
+
+## Known issues
+
+- **"Catalogue unreachable" or a failed download.** The book list comes from [Gutendex](https://gutendex.com), a
+  free community service that is sometimes slow or briefly down. Wait a minute and press **Search** again. Also
+  check your internet connection, and turn off any VPN, proxy, or firewall that might block `gutendex.com` or
+  `gutenberg.org`.
+- **Still no connection on macOS.** Some Macs can't verify secure websites from apps like this one, which looks the
+  same as being offline. If you run from source, running `Install Certificates.command` (in `/Applications/Python 3.x/`)
+  or `pip install certifi` usually fixes it. The downloaded app may need that fix too, and I can't fix it from here.
+- **Offline use.** Books you've already opened, and any `.txt` file you open with **Open file…**, work without a
+  connection.
+- **Security warnings on first launch.** The apps aren't signed, so Windows and macOS show a warning. See the
+  download notes above.
+- **Not tested everywhere.** The Linux build and older Macs in particular may not work.
 
 ## Where your data goes
 
