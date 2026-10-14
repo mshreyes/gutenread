@@ -11,7 +11,7 @@ from dataclasses import dataclass
 from . import store
 
 API = "https://gutendex.com/books"
-USER_AGENT = "GutenRead/0.1 (speed-reading app; https://github.com/YOUR-USER/gutenread)"
+USER_AGENT = "GutenRead/0.1 (speed-reading app; https://github.com/mshreyes/gutenread)"
 MIN_GAP_SECONDS = 2.0   # Project Gutenberg robot policy: >= 2 s between requests
 
 _lock = threading.Lock()
