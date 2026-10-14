@@ -22,7 +22,7 @@ Get the latest build for your system from the [Releases page](../../releases/lat
 | System | File | Notes |
 |---|---|---|
 | Windows | `GutenRead-windows.exe` | If SmartScreen warns you, choose **More info → Run anyway**. |
-| macOS (Apple silicon) | `GutenRead-macos.zip` | Unzip, then right-click the app and choose **Open**. If macOS says the app is damaged, run `xattr -dr com.apple.quarantine GutenRead.app` once. |
+| macOS (Apple silicon) | `GutenRead-macos.zip` | Unzip and open the app. When macOS blocks it, go to **System Settings → Privacy & Security**, scroll down, and click **Open Anyway**. |
 | Linux | `GutenRead-linux.tar.gz` | Extract, then run `./GutenRead`. |
 
 The builds are unsigned, which is why the first launch shows a warning.
